@@ -1,0 +1,379 @@
+/* Place your CSS styles in this file */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Unbounded", cursive;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("image/background.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+nav {
+  width: 60%;
+  font-weight: 800;
+  display: flex;
+  padding: 2% 1%;
+  align-items: top;
+}
+nav img {
+  width: 20%;
+}
+.nav-links {
+  flex: 2;
+  text-align: c;
+}
+.nav-links ul li {
+  list-style: none;
+  padding: 2px;
+  position: relative;
+}
+.nav-links ul li a {
+  color:#222222;
+  text-decoration: none;
+  font-size:auto;
+  text-align: center;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.heding {
+  font-size:auto;
+  padding: 3%;
+  font-weight: 700;
+  color:#222222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.textStyling{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+/* for member background*/
+.header2 {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("image/background.png");
+  background-position: center;
+  background-size:auto;
+  position: relative;
+  text-align: center;
+}
+
+nav {
+  width: 60%;
+  font-weight: 800;
+  display: flex;
+  padding: 2% 1%;
+  align-items: top;
+}
+nav img {
+  width: 20%;
+}
+.nav-links {
+  flex: 2;
+  text-align: c;
+}
+.nav-links ul li {
+  list-style: none;
+  padding: 2px;
+  position: relative;
+}
+.nav-links ul li a {
+  color:#222222;
+  text-decoration: none;
+  font-size: 6vh;
+  text-align: center;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/*for the table apperance */
+.table {
+  border-collapse: collapse;
+  overflow: hidden;
+  width: 60%;
+  margin: 2%;
+  border-radius: 8%;
+}
+td,
+th {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px white;
+  text-align: right;
+  padding: 1.5%;
+  border-bottom: 3px solid white;
+  background-color: #dddddd;
+}
+/* just for the new-member*/
+#new-botton{
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+body {
+  margin: 0;
+  padding: 0px;
+}
+/* for the taske given to each*/
+.task{
+  padding: 0 20%;
+  font-weight: 500;
+  
+}
+/*for box appernce */
+.box {
+  border-radius: 3%;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: -2%;
+  color: black;
+  font-family: "century gothic", sans-serif;
+}
+.box img {
+  width: 80%;
+  height: 400px;
+  border-radius: 50%;
+}
+.box h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+.box h5 {
+  font-size: 25px;
+  font-weight: 100;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.box li {
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a {
+  color: black;
+  text-decoration: none;
+  font-size: 60px;
+}
+/* for names appernce in the table*/
+.names {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  transition: 0.7s ease;
+}
+.names:visited {
+  color: purple;
+}
+.names:hover {
+  color: darkred;
+  font-size: 18px;
+}
+.names:active {
+  color: cadetblue;
+  font-size: 21px;
+}
+p {
+  font-size: large;
+  font-weight: 600;
+}
+/*for smaler screns */
+@media only screen and (max-width: 1300px) {
+  nav {
+    width: 60%;
+    font-weight: 800;
+    display: flex;
+    padding: 2% 1%;
+    align-items: top;
+  }
+  nav img {
+    width: 70%;
+  }
+  .table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    overflow: hidden;
+    width: 80%;
+    margin: 8%;
+    border-radius: 8%;
+  }
+  td,
+  th {
+    border: 1px white;
+    text-align: right;
+    padding: 5% 7%;
+    border-bottom: 3px solid white;
+    background-color: #dddddd;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  body {
+    margin: 0;
+    padding: 0px;
+  }
+  .box {
+    border-radius: 3%;
+    width: 70%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 4%;
+    text-align: center;
+    margin: auto;
+    margin-top: -2%;
+    color: black;
+    font-family: "century gothic", sans-serif;
+  }
+  .box img {
+    width: 80%;
+    height: 40%;
+    border-radius: 50%;
+  }
+  .box h1 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  .box h5 {
+    font-size: 25px;
+    font-weight: 100;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .box li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+  }
+  .box li a {
+    color: black;
+    text-decoration: none;
+    font-size: 60px;
+  }
+}
+
+/*for the new member page*/
+form p{
+   font-weight: 100;
+   
+}
+.box-new{
+    border-radius: 3%;
+    width: 30%;
+    background:#181D31;
+    padding: 4%;
+    text-align: center;
+    margin: auto;
+    margin-top: -2%;
+    color: black;
+    font-family: 'century gothic', sans-serif;
+}
+.input{
+    font-weight: 700;
+    text-align: right;
+    box-shadow: 0 0 2px 2px;
+    padding-top: 3%;
+    border-radius: 3%;
+    background:#F3EFE0;
+    border: 3px solid #678983;
+    color: #222222;
+}
+.new{
+    text-align: right;
+    font-weight: 900;
+    color: #E6DDC4;
+    
+}
+<!-- تشيل الاسهم من جنب الرقم-->
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+ 
+}
+#gender{
+    color: #678983;
+    width: 30%;
+    font-weight: 900;
+    font-size: medium;
+    text-align: center;
+    box-shadow: 0 0 2px 2px;
+    padding-top: 3%;
+    border-radius: 3%;
+    background:#F3EFE0;
+    border: 3px solid #678983;
+}
+
+
+#intro{
+    font-weight: 700;
+    text-align: right;
+    box-shadow: 0 0 2px 2px;
+    padding-top: 3%;
+    border-radius: 3%;
+    background:#F3EFE0;
+    border: 3px solid #678983;
+    color: #222222;
+    
+
+}
+#avatar{
+    text-align: right;
+    margin-right: 3%;
+}
+#enter{
+    width: 50%;
+    color: #dddddd;
+    border:1px solid #dddddd;
+    background-color: #678983;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.7s ease;
+    
+}
+#enter:hover{
+    transform: scale(1.1);    
+}
+
+label{
+    font-weight: 700;
+}
+.new-buttom{
+  text-align: center;
+}
